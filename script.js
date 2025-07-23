@@ -54,16 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Optional: Contact Form Submission (example - will not actually send email without backend)
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent default form submission
-
-            alert('Thank you for your message! I will get back to you soon.');
-            // In a real application, you would send this data to a backend server
-            // using fetch() or XMLHttpRequest here.
-            contactForm.reset(); // Clear the form after submission
-        });
-    }
+    // Removed the problematic contact form submission JavaScript block
+    // The HTML form's 'action' attribute will now handle submission directly to Web3Forms.
 });
