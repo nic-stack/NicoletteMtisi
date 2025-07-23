@@ -389,12 +389,12 @@ main section:last-child {
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Keep centered for overall block */
-    gap: 5px; /* Further reduced gap between tags for a much tighter look */
+    justify-content: flex-start; /* Changed to flex-start to pack skills to the left */
+    gap: 2px; /* Drastically reduced gap for tighter packing */
     margin-top: 15px; /* Slightly reduced top margin */
-    max-width: 900px; /* Optional: Constrain max width to prevent excessive spreading on very wide screens */
-    margin-left: auto; /* Centers the container if max-width is set */
-    margin-right: auto; /* Centers the container if max-width is set */
+    /* Removed max-width to allow it to fill the parent section's width more naturally */
+    margin-left: auto; /* Keep auto margins for potential centering if content is smaller than parent */
+    margin-right: auto;
     align-content: flex-start; /* Ensures rows are packed at the start, preventing large vertical gaps */
     align-items: center; /* Aligns items to the center of the cross-axis (vertically within their line) */
     line-height: 1; /* Tighten line height for less vertical space */
@@ -403,9 +403,9 @@ main section:last-child {
 .skill {
     background-color: var(--secondary-color); /* Using secondary color for skills */
     color: #ffffff;
-    padding: 6px 12px; /* Reduced padding for a smaller tag size */
+    padding: 4px 10px; /* Reduced padding for a smaller tag size */
     border-radius: 20px;
-    font-size: 0.85em; /* Slightly smaller font size */
+    font-size: 0.8em; /* Slightly smaller font size */
     font-weight: 500;
     box-shadow: 0 2px 4px var(--shadow-dark);
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -420,12 +420,12 @@ main section:last-child {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .skills-container {
-        gap: 5px; /* Maintain small gap on smaller screens */
+        gap: 2px; /* Maintain very small gap on smaller screens */
         padding: 0 5px; /* Adjust padding to fit more tightly */
     }
     .skill {
-        padding: 5px 10px; /* Even smaller padding for tags */
-        font-size: 0.8em; /* Even smaller font size */
+        padding: 3px 8px; /* Even smaller padding for tags on mobile */
+        font-size: 0.75em; /* Even smaller font size on mobile */
     }
 }
 
