@@ -390,21 +390,22 @@ main section:last-child {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Keep centered for overall block */
-    gap: 12px; /* Slightly reduced gap between tags for a more compact look */
-    margin-top: 30px;
+    gap: 8px; /* Further reduced gap between tags for a much tighter look */
+    margin-top: 20px; /* Slightly reduced top margin */
     max-width: 900px; /* Optional: Constrain max width to prevent excessive spreading on very wide screens */
     margin-left: auto; /* Centers the container if max-width is set */
     margin-right: auto; /* Centers the container if max-width is set */
     align-content: flex-start; /* Ensures rows are packed at the start, preventing large vertical gaps */
-    align-items: flex-start; /* Aligns items to the start of the cross-axis (top of their line) */
+    align-items: center; /* Aligns items to the center of the cross-axis (vertically within their line) */
+    line-height: 1; /* Tighten line height for less vertical space */
 }
 
 .skill {
     background-color: var(--secondary-color); /* Using secondary color for skills */
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 8px 15px; /* Reduced padding for a smaller tag size */
     border-radius: 20px;
-    font-size: 0.95em;
+    font-size: 0.9em; /* Slightly smaller font size */
     font-weight: 500;
     box-shadow: 0 2px 4px var(--shadow-dark);
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -419,12 +420,12 @@ main section:last-child {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .skills-container {
-        gap: 10px; /* Further reduce gap on smaller screens */
-        padding: 0 15px; /* Add some padding to the sides */
+        gap: 8px; /* Maintain small gap on smaller screens */
+        padding: 0 10px; /* Adjust padding to fit more tightly */
     }
     .skill {
-        padding: 8px 15px; /* Slightly smaller padding for tags */
-        font-size: 0.9em;
+        padding: 6px 12px; /* Even smaller padding for tags */
+        font-size: 0.85em; /* Even smaller font size */
     }
 }
 
