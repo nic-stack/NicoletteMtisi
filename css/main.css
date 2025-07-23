@@ -433,7 +433,7 @@ main section:last-child {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid var(--border-dark); /* Subtle border */
     height: 100%; /* Crucial: Ensures all cards stretch to the height of the tallest in the row */
-    text-align: center; /* Center content within the card */
+    text-align: left; /* Changed from center to left */
 }
 
 .project-card:hover {
@@ -453,6 +453,7 @@ main section:last-child {
     color: var(--primary-color);
     padding: 15px 20px 0; /* Internal padding for heading */
     margin-bottom: 5px;
+    text-align: left; /* Ensure heading is left-aligned */
 }
 
 .project-card p {
@@ -461,6 +462,7 @@ main section:last-child {
     margin-bottom: 10px;
     flex-grow: 1; /* Allows description to take available space, pushing links to bottom */
     color: var(--text-light); /* Project description text */
+    text-align: left; /* Ensure paragraph is left-aligned */
 }
 
 .project-writeup-summary {
@@ -468,13 +470,14 @@ main section:last-child {
     color: var(--text-muted); /* Muted text for summary */
     font-style: italic;
     margin: -5px 20px 15px; /* Adjust margin for summary */
+    text-align: left; /* Ensure summary is left-aligned */
 }
 
 .project-tech-stack {
     padding: 0 20px 15px; /* Internal padding for tech stack */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start; /* Changed from center to flex-start for left alignment */
     gap: 8px; /* Spacing between tech tags */
     margin-top: 10px;
 }
@@ -492,8 +495,7 @@ main section:last-child {
 .project-links {
     padding: 15px 20px 20px; /* Internal padding for links */
     border-top: 1px solid var(--border-dark);
-    display: flex;
-    justify-content: center; /* Center links in the card */
+    justify-content: flex-start; /* Changed from center to flex-start for left alignment */
     align-items: center;
     flex-wrap: wrap;
     gap: 10px; /* Spacing between links */
