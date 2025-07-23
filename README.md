@@ -1,79 +1,81 @@
-# Hi I'M Nicolette 👋
+Nicolette Mtisi - Data Analytics & Data Science Portfolio
+Welcome to the official repository for Nicolette Mtisi's professional portfolio website. This site showcases my expertise as a Data Scientist, highlighting my projects, experience, and skills in transforming complex data into actionable insights and compelling stories.
 
-Welcome to my personal portfolio website! I’m a data analyst and Master’s student specializing in transforming complex data into actionable insights that drive real-world decisions. This repository hosts the source code for my portfolio website.
+🚀 Features
+Engaging "About Me": A personal introduction highlighting passion for data, model building, and making data speak.
 
-## 🔗 View My Work
+Dynamic Work Experience Timeline: A visually appealing timeline detailing professional roles and quantifiable achievements.
 
-Explore my live portfolio: [https://nic-stack.github.io](https://nic-stack.github.io)
+Comprehensive Education Section: Outlines academic background and qualifications.
 
-## 🚀 How to Run Locally
+Detailed Skills Toolkit: A categorized list of technical proficiencies.
 
-To view this portfolio website on your local machine:
+Interactive Project Showcase:
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/nic-stack/your-portfolio-repo.git](https://github.com/nic-stack/your-portfolio-repo.git) # Replace your-portfolio-repo with your actual repo name
-    ```
-2.  **Navigate to the project directory:**
-    ```bash
-    cd your-portfolio-repo # Replace your-portfolio-repo with your actual repo name
-    ```
-3.  **Open `index.html`:**
-    Simply open the `index.html` file in your preferred web browser.
+Each project features a dedicated card with a descriptive summary.
 
-## 👩‍💻 About Me
+Visual representation (image) for quick understanding.
 
-I'm Nicolette Mtisi, a Master’s student in Data Analytics and Visualization at Yeshiva University with a background in data science and a passion for solving real-world problems through data. My entrepreneurial mindset drives my approach to data as a tool for understanding people, trends, and opportunities.
+Links to GitHub repositories for code.
 
-I specialize in Python, SQL, Power BI, and Tableau, with experience in NLP, machine learning, and data visualization. My projects focus on delivering actionable insights for business and societal impact.
+Links to live demos (where applicable).
 
-## 🛠️ Skills
+Links to detailed Medium articles/write-ups for in-depth insights into methodology and results.
 
-- Python
-- SQL
-- Power BI
-- Tableau
-- Natural Language Processing (NLP)
-- Machine Learning
-- Data Visualization
-- LLM
-- Hugging Face
-- Open AI
-- Gradio
-- Predictive Modeling
-- Data Cleaning & Wrangling
-- ETL
-- Data Modeling
-- Dashboard Development
-- Business Intelligence (BI)
-- AWS
-- Git
-- Docker
+Professional Contact Form: Easy way for visitors to get in touch for opportunities or collaborations.
 
-## 📂 Projects
+Responsive Design: Optimized for seamless viewing across various devices (desktop, tablet, mobile).
 
-| Project                                     | Description                                                                                                                                                                                                                             | Links                                                                                                                                                                                                     |
-|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **USA Flight Delay and Cancellation Analysis** | Analyzed flight delay and cancellation patterns using real-world airline data to identify key factors and trends, leveraging Python and SQL.                                                                                        | [View Project](https://github.com/nic-stack/USA-Air-travel-performance-)                                                                                                                                    |
-| **Twitter Sentiment Analysis using DistilBERT** | Built and deployed a lightweight NLP model using DistilBERT to classify airline tweet sentiments, deployed on Hugging Face Spaces with a Gradio UI.                                                                                     | [View Project](https://github.com/nic-stack/Twitter-Sentiment-Analysis) · [Live Demo](https://huggingface.co/spaces/Nicolettem/bert_sentiment_demo)                                                           |
-| **Sentiment Analysis using NLP** | Developed an NLP-based model to analyze sentiment in text data, using Python libraries like NLTK and scikit-learn.                                                                                                                      | [View Project](https://github.com/nic-stack/Twitter-Sentiment-Analysis)                                                                                                                                    |
-| **Predictive Maintenance for Machinery** | Built a machine learning model to predict machinery failures based on sensor data, improving maintenance schedules.                                                                                                                       | [View Project](https://github.com/nic-stack/predictive-maintenance)                                                                                                                                         |
-| **Power BI Sales Dashboard for Adventure Works** | Designed an interactive Power BI dashboard to visualize sales performance for Adventure Works, highlighting key metrics.                                                                                                                | [View Project](https://app.powerbi.com/groups/me/reports/c00bd03b-0461-44ba-bd9e-ecf60b2ecc4b/ReportSection?experience=power-bi)                                                                          |
-| **Chronic Disease Analytics System – OLTP to OLAP** | Developed a system to transform transactional (OLTP) health data into an analytical (OLAP) format for chronic disease insights.                                                                                                        | [View Project](https://www.linkedin.com/in/nicolette-mtisi/details/projects/?profileUrn=urn%3Ali%3Afsd_profile%3AACoAACw4oEEByhfHbAxmnOXOiJcNr0TjaRWZnHI)                                                   |
+Smooth Navigation: Sticky navigation bar and a "Back to Top" button for enhanced user experience.
 
-## ✨ Future Plans (Optional)
+Professional Dark Theme: A sleek, modern aesthetic with a limited, professional color palette (dark backgrounds, vibrant blue/purple accents, and subtle pink highlights).
 
-* Add more interactive data visualizations.
-* Integrate a blog section for data science articles.
-* Implement a dark mode toggle.
+🛠️ Technologies Used
+HTML5: For structuring the content of the website.
 
-## 📬 Contact
+CSS3: For styling and layout, including a custom dark theme and responsive design.
 
-- 📧 Email: [nicmtisi@gmail.com](mailto:nicmtisi@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/nicolette-mtisi](https://www.linkedin.com/in/nicolette-mtisi)
-- 📝 Medium: [medium.com/@nicmtisi](https://medium.com/@nicmtisi)
-- 🐙 GitHub: [github.com/nic-stack](https://github.com/nic-stack)
+JavaScript: For interactive elements like the sticky navigation and "Back to Top" button, and basic form handling.
 
-## 📄 License (Optional)
+Google Fonts (Poppins): For professional typography.
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+Font Awesome: For scalable vector icons.
+
+📦 Installation and Setup
+To get a local copy up and running, follow these simple steps:
+
+Clone the repository:
+
+git clone https://github.com/your-github-username/your-portfolio-repo.git
+
+(Note: Replace your-github-username/your-portfolio-repo.git with the actual URL of your portfolio's GitHub repository if you host it there.)
+
+Navigate to the project directory:
+
+cd your-portfolio-repo
+
+Ensure image assets are in place:
+Make sure your profile.jpg and all project images (flights.png, distilbert.png, twitter_nlp.png, predictive.png, adventureworks.png, chronic_disease.png) are located directly in the images/ folder within your project root.
+
+Open index.html:
+Simply open the index.html file in your web browser. No server setup is required for this static site.
+
+💡 Usage
+Navigate through different sections using the sticky navigation bar.
+
+Click on project cards to view details, GitHub repositories, live demos, or read accompanying articles on Medium.
+
+Use the contact form to send a message directly.
+
+Click the "Download Resume" button to access my CV.
+
+🤝 Contributing
+While this is a personal portfolio, suggestions for improvements or bug fixes are always welcome. Feel free to open an issue or submit a pull request.
+
+📄 License
+This project is open-source and available under the MIT License. (Note: You might want to create a LICENSE file in your repository if you choose to include one.)
+
+📧 Contact
+Nicolette Mtisi – nicmtisi@gmail.com
+
+Project Link: https://nic-stack.github.io/NicoletteMtisi/ (Note: Update this with your actual deployed URL)
