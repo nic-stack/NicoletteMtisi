@@ -390,7 +390,7 @@ main section:last-child {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; /* Changed to flex-start to pack skills to the left */
-    gap: 2px; /* Drastically reduced gap for tighter packing */
+    gap: 5px; /* Adjusted gap for better visual balance with increased size */
     margin-top: 15px; /* Slightly reduced top margin */
     /* Removed max-width to allow it to fill the parent section's width more naturally */
     margin-left: auto; /* Keep auto margins for potential centering if content is smaller than parent */
@@ -403,9 +403,9 @@ main section:last-child {
 .skill {
     background-color: var(--secondary-color); /* Using secondary color for skills */
     color: #ffffff;
-    padding: 4px 10px; /* Reduced padding for a smaller tag size */
+    padding: 6px 12px; /* Increased padding for a slightly larger tag size */
     border-radius: 20px;
-    font-size: 0.8em; /* Slightly smaller font size */
+    font-size: 0.9em; /* Increased font size */
     font-weight: 500;
     box-shadow: 0 2px 4px var(--shadow-dark);
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -420,12 +420,12 @@ main section:last-child {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .skills-container {
-        gap: 2px; /* Maintain very small gap on smaller screens */
+        gap: 5px; /* Maintain small gap on smaller screens */
         padding: 0 5px; /* Adjust padding to fit more tightly */
     }
     .skill {
-        padding: 3px 8px; /* Even smaller padding for tags on mobile */
-        font-size: 0.75em; /* Even smaller font size on mobile */
+        padding: 5px 10px; /* Slightly smaller padding for tags on mobile */
+        font-size: 0.85em; /* Slightly smaller font size on mobile */
     }
 }
 
