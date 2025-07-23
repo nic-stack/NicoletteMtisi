@@ -246,28 +246,32 @@
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Get In Touch</h2>
-      <p>I'm currently seeking new opportunities and collaborations. My inbox is always open!</p>
-      <div class="contact-links">
-          <a href="mailto:nicmtisi@gmail.com" class="contact-icon-link" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
-          <a href="https://www.linkedin.com/in/nicolette-mtisi" class="contact-icon-link" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-          <a href="https://medium.com/@nicmtisi" class="contact-icon-link" target="_blank"><i class="fab fa-medium fa-2x"></i></a>
-          <a href="https://github.com/nic-stack" class="contact-icon-link" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-      </div>
-      <div class="contact-form-container">
+   <section id="contact">
+  <h2>Get In Touch</h2>
+  <p>I'm currently seeking new opportunities and collaborations. My inbox is always open!</p>
+  <div class="contact-links">
+      <a href="mailto:nicmtisi@gmail.com" class="contact-icon-link" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/nicolette-mtisi" class="contact-icon-link" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://medium.com/@nicmtisi" class="contact-icon-link" target="_blank"><i class="fab fa-medium fa-2x"></i></a>
+      <a href="https://github.com/nic-stack" class="contact-icon-link" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+  </div>
+  <div class="contact-form-container">
     <h3>Send Me a Message</h3>
-    <form class="contact-form" action="https://formspree.io/f/xwpqlavr" method="POST">
-      <input type="hidden" name="_replyto" value="nicmtisi@gmail.com">
-      <input type="hidden" name="_subject" value="New message from Nicolette's Portfolio">
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="b8cd2946-9c78-439d-95f2-562fc60b9e42">
+
+      <input type="hidden" name="subject" value="New message from Nicolette's Portfolio">
+
+      <input type="hidden" name="botcheck" class="botcheck">
+
       <div class="form-group">
         <label for="fullName">Full Name</label>
-        <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
-      </div>
+        <input type="text" id="fullName" name="name" placeholder="Your Name" required>
+        </div>
       <div class="form-group">
         <label for="emailAddress">Email Address</label>
-        <input type="email" id="emailAddress" name="emailAddress" placeholder="Enter your email" required>
-      </div>
+        <input type="email" id="emailAddress" name="email" placeholder="Enter your email" required>
+        </div>
       <div class="form-group">
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Your message..." rows="6" required></textarea>
@@ -276,7 +280,6 @@
     </form>
   </div>
 </section>
-  </main>
 
   <footer>
     <p>© 2025 Nicolette Mtisi</p>
