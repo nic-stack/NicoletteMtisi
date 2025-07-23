@@ -279,7 +279,7 @@ main section:last-child {
     margin-right: 20px; /* Space between dot and card content */
     margin-top: 5px; /* Adjust vertical alignment with card */
     position: absolute; /* Absolute position for dot relative to experience-card-new */
-    left: 0; /* Align with the timeline line */
+    left: 0;
     transform: translateX(-50%); /* Center the dot on the line */
 }
 .timeline-dot-new i {
@@ -383,13 +383,20 @@ main section:last-child {
 /* Skills Section */
 #skills {
     background-color: var(--background-dark); /* Explicitly dark */
+    padding-bottom: 80px; /* Adjust bottom padding if needed, to control space below skills */
 }
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    justify-content: center; /* Keep centered for overall block */
+    gap: 12px; /* Slightly reduced gap between tags for a more compact look */
     margin-top: 30px;
+    max-width: 900px; /* Optional: Constrain max width to prevent excessive spreading on very wide screens */
+    margin-left: auto; /* Centers the container if max-width is set */
+    margin-right: auto; /* Centers the container if max-width is set */
+    align-content: flex-start; /* Ensures rows are packed at the start, preventing large vertical gaps */
+    align-items: flex-start; /* Aligns items to the start of the cross-axis (top of their line) */
 }
 
 .skill {
@@ -401,11 +408,24 @@ main section:last-child {
     font-weight: 500;
     box-shadow: 0 2px 4px var(--shadow-dark);
     transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap; /* Prevents text inside tags from wrapping */
 }
 
 .skill:hover {
     background-color: #6a1b9a; /* Darker secondary on hover */
     transform: translateY(-2px);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .skills-container {
+        gap: 10px; /* Further reduce gap on smaller screens */
+        padding: 0 15px; /* Add some padding to the sides */
+    }
+    .skill {
+        padding: 8px 15px; /* Slightly smaller padding for tags */
+        font-size: 0.9em;
+    }
 }
 
 /* Projects Section */
@@ -495,6 +515,7 @@ main section:last-child {
 .project-links {
     padding: 15px 20px 20px; /* Internal padding for links */
     border-top: 1px solid var(--border-dark);
+    display: flex;
     justify-content: flex-start; /* Changed from center to flex-start for left alignment */
     align-items: center;
     flex-wrap: wrap;
