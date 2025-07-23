@@ -1,98 +1,69 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for navigation and .btn links
-    document.querySelectorAll('nav a, .btn').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const targetId = this.getAttribute('href');
-            if (targetId === '#home') { // Special handling for 'home' to scroll to very top
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            } else {
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    // Calculate offset for sticky nav (adjust if nav height changes)
-                    const navHeight = document.querySelector('.sticky-nav').offsetHeight;
-                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                    const offsetPosition = elementPosition - navHeight - 20; // -20 for extra padding
 
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            }
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            const offset = document.querySelector('.sticky-nav').offsetHeight; // Height of sticky nav
+
+            // Scroll to the target element with an offset for the sticky nav
+            window.scrollTo({
+                top: targetElement.offsetTop - offset,
+                behavior: 'smooth'
+            });
         });
     });
 
-    // Sticky Navigation Bar functionality
-    const nav = document.querySelector('.sticky-nav');
-    const heroSection = document.querySelector('.hero'); // Not directly used in the current sticky logic, but good to have reference
-    let navOffsetTop = nav.offsetTop; // Initial position of the nav
+    // Sticky Navigation
+    const stickyNav = document.querySelector('.sticky-nav');
+    const heroSection = document.getElementById('home'); // Or the section just before the nav
 
-    // Recalculate navOffsetTop on load and resize, then handle sticky state
-    const updateNavSticky = () => {
-        navOffsetTop = nav.offsetTop; // Get the initial offset of the nav
-        handleStickyNav();
-    };
+    // Calculate the point at which the nav should become sticky
+    // This is typically the height of the content *before* the nav
+    const stickyPoint = heroSection.offsetHeight;
 
-    function handleStickyNav() {
-        if (window.pageYOffset >= navOffsetTop) {
-            nav.classList.add('sticky'); // Add a class when sticky
+    function handleScroll() {
+        if (window.scrollY > stickyPoint) {
+            stickyNav.classList.add('fixed-nav');
         } else {
-            nav.classList.remove('sticky');
+            stickyNav.classList.remove('fixed-nav');
         }
-    }
 
-    // Call once on load, then on scroll and resize
-    window.addEventListener('scroll', handleStickyNav);
-    window.addEventListener('resize', updateNavSticky);
-    updateNavSticky(); // Initial check
-
-    // Back to Top Button functionality
-    const backToTopBtn = document.getElementById('backToTopBtn');
-
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) { // Show button after scrolling 300px
-            backToTopBtn.style.display = 'block';
+        // Back to Top button visibility
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        if (window.scrollY > 300) { // Show button after scrolling 300px down
+            backToTopBtn.style.display = 'flex'; // Use flex to center icon
         } else {
             backToTopBtn.style.display = 'none';
         }
-    });
+    }
 
-    backToTopBtn.addEventListener('click', () => {
+    window.addEventListener('scroll', handleScroll);
+    // Call on load in case user refreshed part-way down
+    handleScroll();
+
+
+    // Back to Top Button functionality
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    backToTopBtn.addEventListener('click', function() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     });
 
-    // Optional: Highlight active nav link (more advanced, but good UX)
-    const sections = document.querySelectorAll('section, header.hero'); // Include hero for home
-    const navLinks = document.querySelectorAll('.nav-links a');
+    // Optional: Contact Form Submission (example - will not actually send email without backend)
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
 
-    function highlightNavLink() {
-        let current = '';
-        const navHeight = nav.offsetHeight; // Get current nav height
-
-        sections.forEach(section => {
-            // Add a small buffer to the top offset to ensure the section is well into view
-            const sectionTop = section.offsetTop - navHeight - 50; // Adjusted buffer
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').includes(current)) {
-                link.classList.add('active');
-            }
+            alert('Thank you for your message! I will get back to you soon.');
+            // In a real application, you would send this data to a backend server
+            // using fetch() or XMLHttpRequest here.
+            contactForm.reset(); // Clear the form after submission
         });
     }
-
-    window.addEventListener('scroll', highlightNavLink);
-    highlightNavLink(); // Initial call
 });
