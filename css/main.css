@@ -390,8 +390,8 @@ main section:last-child {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Keep centered for overall block */
-    gap: 8px; /* Further reduced gap between tags for a much tighter look */
-    margin-top: 20px; /* Slightly reduced top margin */
+    gap: 5px; /* Further reduced gap between tags for a much tighter look */
+    margin-top: 15px; /* Slightly reduced top margin */
     max-width: 900px; /* Optional: Constrain max width to prevent excessive spreading on very wide screens */
     margin-left: auto; /* Centers the container if max-width is set */
     margin-right: auto; /* Centers the container if max-width is set */
@@ -403,9 +403,9 @@ main section:last-child {
 .skill {
     background-color: var(--secondary-color); /* Using secondary color for skills */
     color: #ffffff;
-    padding: 8px 15px; /* Reduced padding for a smaller tag size */
+    padding: 6px 12px; /* Reduced padding for a smaller tag size */
     border-radius: 20px;
-    font-size: 0.9em; /* Slightly smaller font size */
+    font-size: 0.85em; /* Slightly smaller font size */
     font-weight: 500;
     box-shadow: 0 2px 4px var(--shadow-dark);
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -420,12 +420,12 @@ main section:last-child {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .skills-container {
-        gap: 8px; /* Maintain small gap on smaller screens */
-        padding: 0 10px; /* Adjust padding to fit more tightly */
+        gap: 5px; /* Maintain small gap on smaller screens */
+        padding: 0 5px; /* Adjust padding to fit more tightly */
     }
     .skill {
-        padding: 6px 12px; /* Even smaller padding for tags */
-        font-size: 0.85em; /* Even smaller font size */
+        padding: 5px 10px; /* Even smaller padding for tags */
+        font-size: 0.8em; /* Even smaller font size */
     }
 }
 
@@ -739,7 +739,7 @@ footer {
     .projects-container {
         grid-template-columns: 1fr;
         gap: 20px; /* Slightly less gap on smaller screens */
-        padding: 0 15px; /* Adjust padding for smaller screens */
+        padding: 0 15px; /* Adjust padding to fit more tightly */
     }
 
     .education-item {
