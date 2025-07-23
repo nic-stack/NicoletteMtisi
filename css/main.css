@@ -773,11 +773,11 @@ footer {
         font-size: 1em;
     }
     .sticky-nav ul {
-        gap: 6px; /* Further reduced gap for more compact navigation on small screens */
+        gap: 15px;
     }
     .sticky-nav a {
-        padding: 5px 8px; /* Reduced padding for smaller links */
-        font-size: 0.85em; /* Slightly smaller font size for links */
+        padding: 6px 10px;
+        font-size: 0.9em;
     }
     main section {
         padding: 40px 15px;
