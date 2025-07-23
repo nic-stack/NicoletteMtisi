@@ -389,23 +389,23 @@ main section:last-child {
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Changed to flex-start to pack skills to the left */
-    gap: 5px; /* Adjusted gap for better visual balance with increased size */
+    justify-content: center; /* Set to center for the desired alignment */
+    gap: 8px; /* Adjusted gap for better visual balance */
     margin-top: 15px; /* Slightly reduced top margin */
-    /* Removed max-width to allow it to fill the parent section's width more naturally */
-    margin-left: auto; /* Keep auto margins for potential centering if content is smaller than parent */
+    max-width: 900px; /* Reintroduced a reasonable max-width to control wrapping */
+    margin-left: auto; /* Centers the container */
     margin-right: auto;
     align-content: flex-start; /* Ensures rows are packed at the start, preventing large vertical gaps */
     align-items: center; /* Aligns items to the center of the cross-axis (vertically within their line) */
-    line-height: 1; /* Tighten line height for less vertical space */
+    line-height: 1.2; /* Slightly increased line height for better readability */
 }
 
 .skill {
     background-color: var(--secondary-color); /* Using secondary color for skills */
     color: #ffffff;
-    padding: 6px 12px; /* Increased padding for a slightly larger tag size */
+    padding: 7px 14px; /* Adjusted padding for a balanced size */
     border-radius: 20px;
-    font-size: 0.9em; /* Increased font size */
+    font-size: 0.88em; /* Adjusted font size for readability */
     font-weight: 500;
     box-shadow: 0 2px 4px var(--shadow-dark);
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -420,12 +420,12 @@ main section:last-child {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .skills-container {
-        gap: 5px; /* Maintain small gap on smaller screens */
-        padding: 0 5px; /* Adjust padding to fit more tightly */
+        gap: 6px; /* Slightly smaller gap on smaller screens */
+        padding: 0 10px; /* Adjust padding to fit more tightly */
     }
     .skill {
-        padding: 5px 10px; /* Slightly smaller padding for tags on mobile */
-        font-size: 0.85em; /* Slightly smaller font size on mobile */
+        padding: 6px 12px; /* Adjusted padding for tags on mobile */
+        font-size: 0.82em; /* Adjusted font size on mobile */
     }
 }
 
