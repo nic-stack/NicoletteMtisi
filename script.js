@@ -18,11 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Sticky Navigation
     const stickyNav = document.querySelector('.sticky-nav');
-    const heroSection = document.getElementById('home'); // Or the section just before the nav
+    const heroSection = document.getElementById('home');
+    const projectsSection = document.getElementById('projects'); // Get the projects section
 
     // Calculate the point at which the nav should become sticky
     // This is typically the height of the content *before* the nav
-    const stickyPoint = heroSection.offsetHeight;
+    const stickyPoint = heroSection.offsetHeight + projectsSection.offsetHeight; // Add height of projects section
 
     function handleScroll() {
         if (window.scrollY > stickyPoint) {
