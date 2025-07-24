@@ -195,7 +195,7 @@ a:hover {
 }
 
 /* Main Content Sections */
-main section {
+main section, #projects { /* Include #projects here for consistent styling */
     padding: 80px 20px; /* Increased vertical padding */
     max-width: 1200px;
     margin: 0 auto;
@@ -203,7 +203,7 @@ main section {
     border-bottom: 1px solid var(--border-dark); /* Subtle separator */
 }
 main section:last-child {
-    border-bottom: none; /* No border for the last section */
+    border-bottom: none; /* No border for the last section inside <main> */
 }
 
 /* About Section */
@@ -431,7 +431,11 @@ main section:last-child {
 
 /* Projects Section */
 #projects {
-    background-color: var(--background-dark); /* Explicitly dark */
+    /* Styles for #projects are now primarily defined in the 'main section, #projects' rule above.
+       This specific rule can be removed if its only purpose was to set background-color,
+       as that's now covered by the combined rule.
+       If it had unique styles not shared by other sections, they would remain here. */
+    /* background-color: var(--background-dark); */ /* This line is now redundant */
 }
 
 .projects-container {
@@ -511,6 +515,11 @@ main section:last-child {
     font-size: 0.8em;
     font-weight: 500;
     white-space: nowrap; /* Prevents tags from breaking lines */
+}
+
+.tech-tag:hover {
+    background-color: #6a1b9a; /* Darker secondary on hover */
+    transform: translateY(-2px);
 }
 
 .project-links {
