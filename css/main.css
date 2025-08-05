@@ -339,7 +339,6 @@ main section:last-child {
     line-height: 1;
 }
 
-
 /* Education Section */
 #education {
     background-color: var(--background-dark); /* Explicitly dark */
@@ -408,15 +407,19 @@ main section:last-child {
     transform: translateY(-2px);
 }
 
-/* Projects Section */
+/* Projects Section - CORRECTED CODE */
 #projects {
     background-color: var(--background-dark); /* Explicitly dark */
 }
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Always show 3 cards on large screens */
     gap: 30px;
     margin-top: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
 .project-card {
@@ -639,8 +642,19 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
+/* Responsive Design for Projects Section */
+@media (max-width: 1024px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 cards on tablets */
+    }
+}
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* Show 1 card on small screens */
+    }
+}
 
-/* Responsive Design */
+/* General Responsive Design for other sections */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.2em;
@@ -690,7 +704,6 @@ footer {
         left: 0;
         transform: translateX(0%); /* Center dot for small screens, no offset from line */
     }
-    /* Adjust card content to align to the left on small screens */
     .card-content-new {
         margin-left: 0; /* Remove left margin */
         width: 100%; /* Take full width */
@@ -698,11 +711,6 @@ footer {
     }
     .card-content-new ul {
         padding-left: 20px;
-    }
-
-
-    .projects-container {
-        grid-template-columns: 1fr;
     }
 
     .education-item {
@@ -727,7 +735,6 @@ footer {
         font-size: 1.3em;
     }
 }
-
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8em;
