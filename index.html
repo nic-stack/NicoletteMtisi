@@ -1,310 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nicolette Mtisi - Data Analytics Portfolio</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <header class="hero" id="home">
-    <h1>Hi, I'm <span class="highlight">Nicolette Mtisi</span></h1>
-    <p class="subtitle">I can help unlock the power of your data. Passionate AI Engineer & Data Scientist.</p>
-    <div class="buttons">
-      <a href="#projects" class="btn">View My Work</a>
-      <a href="#contact" class="btn secondary">Get In Touch</a>
-    </div>
-    <a href="Resume.pdf" class="Resume-btn" target="_blank">Download Resume <i class="fas fa-download"></i></a>
-  </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
+    <header class="hero">
+        <h1>Hello, I'm a <span class="highlight">Data Scientist</span></h1>
+        <p class="subtitle">I'm passionate about uncovering insights and building data-driven solutions.</p>
+        <div class="buttons">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn secondary">Get in Touch</a>
+        </div>
+        <a href="path/to/your/resume.pdf" class="Resume-btn">Download Resume</a>
+    </header>
 
-            <div class="project-card">
-        <img src="images/policies.png" alt="Insurance Profitability Explorer Project" class="project-img">
-        <h3>Insurance Profitability Explorer</h3>
-        <p>Developed an interactive Power BI dashboard to analyze insurance profitability, providing key insights on product performance, underwriter efficiency, and sales channels.</p>
-        <p class="project-writeup-summary"> This project transforms simulated insurance data into a strategic decision-making tool, demonstrating how data analytics can drive proactive management and optimize business performance.</p>
-        <div class="project-tech-stack">
-          <span class="tech-tag">Power BI</span>
-          <span class="tech-tag">DAX</span>
-          <span class="tech-tag">Data Visualization</span>
-          <span class="tech-tag">Business Intelligence (BI)</span>
-          <span class="tech-tag">Data Modeling</span>
-        </div>
-        <p class="project-links">
-          <a href="https://app.powerbi.com/groups/me/reports/be19d713-b093-4aa9-8f08-92d9f1ff8001/db7ef0c54b6fbc660132?experience=power-bi" target="_blank">View Live Dashboard <i class="fas fa-external-link-alt"></i></a>
-          <span class="link-separator">|</span> <a href="https://medium.com/@nicmtisi/from-data-to-decisions-building-the-insurance-profitability-explorer-ace71889e691" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-        </p>
-      </div>
-            <div class="project-card">
-        <img src="images/flights.jpg" alt="USA Flight Delay and Cancellation Analysis Project" class="project-img">
-        <h3>USA Flight Delay and Cancellation Analysis</h3>
-        <p>Analyzed flight delay and cancellation patterns using real-world airline data to identify key factors and trends, leveraging Python and SQL for data processing.</p>
-        <p class="project-writeup-summary"> Detailed analysis of flight delays/cancellations, identifying patterns and key contributing factors using data-driven insights to improve travel efficiency.</p>
-        <div class="project-tech-stack">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Tableau</span>
-          <span class="tech-tag">Data Cleaning & Wrangling</span>
-          <span class="tech-tag">Data Visualization</span>
-        </div>
-        <p class="project-links">
-          <a href="https://github.com/nic-stack/USA-Flight-Delays-and-Cancellation-Analysis" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
-          <span class="link-separator">|</span> <a href="https://medium.com/@nicmtisi/usa-air-travel-performance-delays-and-cancellations-%EF%B8%8F-6518b16c5e1f" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-        </p>
-      </div>
-      <div class="project-card">
-        <img src="images/distibert.jpg" alt="Twitter Sentiment Analysis using DistilBERT Project" class="project-img">
-        <h3>Twitter Sentiment Analysis using DistilBERT</h3>
-        <p>Built and deployed a lightweight NLP model using DistilBERT to classify airline tweet sentiments, deployed on Hugging Face Spaces with a Gradio UI.</p>
-        <p class="project-writeup-summary"> A step-by-step journey into building a BERT-based sentiment classifier for airline tweets, focusing on leveraging LLMs and deploying with Gradio.</p>
-        <div class="project-tech-stack">
-          <span class="tech-tag">NLP</span>
-          <span class="tech-tag">DistilBERT</span>
-          <span class="tech-tag">Hugging Face</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Machine Learning</span>
-          <span class="tech-tag">Gradio</span>
-        </div>
-        <p class="project-links">
-            <a href="https://huggingface.co/Nicolettem/bert-sentiment-nic" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a> |
-            <a href="https://huggingface.co/spaces/Nicolettem/bert_sentiment_demo" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
-            <span class="link-separator">|</span> <a href="https://medium.com/gopenai/building-a-bert-based-sentiment-classifier-for-airline-tweets-my-step-by-step-journey-52bd079c0454" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-        </p>
-      </div>
-      <div class="project-card">
-        <img src="images/twitter NLP.jpg" alt="Sentiment Analysis using NLP Project" class="project-img">
-        <h3>Sentiment Analysis using NLP</h3>
-        <p>Developed an NLP-based model to analyze sentiment in text data, using Python libraries like NLTK and scikit-learn for preprocessing and classification.</p>
-        <p class="project-writeup-summary"> Explored fundamental NLP techniques to build a robust sentiment analysis model, detailing data preprocessing and classification methods.</p>
-        <div class="project-tech-stack">
-          <span class="tech-tag">NLP</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Scikit-learn</span>
-          <span class="tech-tag">Machine Learning</span>
-          <span class="tech-tag">Data Cleaning & Wrangling</span>
-        </div>
-        <p class="project-links">
-          <a href="https://github.com/nic-stack/Twitter-Sentiment-Analysis" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
-          <span class="link-separator">|</span> <a href="https://medium.com/@nicmtisi/decoding-user-feedback-my-twitter-sentiment-analysis-project-with-python-da7f2ba8d513" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-        </p>
-      </div>
-      <div class="project-card">
-        <img src="images/predictive.jpg" alt="Predictive Maintenance for Machinery Project" class="project-img">
-        <h3>Predictive Maintenance for Machinery</h3>
-        <p>Built a machine learning model to predict machinery failures based on sensor data, improving maintenance schedules and reducing downtime.</p>
-        <p class="project-writeup-summary"> A comprehensive approach to predictive maintenance, leveraging ensemble techniques and data balancing strategies to enhance equipment reliability and minimize downtime.</p>
-        <div class="project-tech-stack">
-          <span class="tech-tag">Machine Learning</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Predictive Modeling</span>
-          <span class="tech-tag">Data Cleaning & Wrangling</span>
-        </div>
-        <p class="project-links">
-          <a href="https://github.com/nic-stack/predictive-maintenance" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
-          <span class="link-separator">|</span> <a href="https://medium.com/@nicmtisi/enhancing-predictive-maintenance-through-machine-learning-a-comprehensive-survey-on-ensemble-d6dc0ed5898c" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-        </p>
-      </div>
-      <div class="project-card">
-        <img src="images/Adventureworks.jpg" alt="Power BI Sales Dashboard for Adventure Works Project" class="project-img">
-        <h3>Power BI Sales Dashboard for Adventure Works</h3>
-        <p>Designed an interactive Power BI dashboard to visualize sales performance for Adventure Works, highlighting key metrics and trends for decision-making.</p>
-        <p class="project-writeup-summary"> A detailed guide on transforming raw data into actionable insights using Power BI, showcasing sales performance and key business trends for Adventure Works.</p>
-        <div class="project-tech-stack">
-          <span class="tech-tag">Power BI</span>
-          <span class="tech-tag">Data Visualization</span>
-          <span class="tech-tag">Business Intelligence (BI)</span>
-          <span class="tech-tag">Data Modeling</span>
-          <span class="tech-tag">Microsoft Excel</span>
-        </div>
-        <p class="project-links">
-          <a href="https://app.powerbi.com/groups/me/reports/c00bd03b-0461-44ba-bd9e-ecf60b2ecc4b/ReportSection?experience=power-bi" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
-          <span class="link-separator">|</span> <a href="https://medium.com/@nicmtisi/turning-data-into-insight-a-power-bi-sales-dashboard-for-adventure-works-649573d5d8ff" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-        </p>
-      </div>
-      <div class="project-card">
-        <img src="images/chronic disease.jpg" alt="Chronic Disease Analytics System Project" class="project-img">
-        <h3>Chronic Disease Analytics System – OLTP to OLAP</h3>
-        <p>Developed a system to transform transactional (OLTP) health data into an analytical (OLAP) format for chronic disease insights.</p>
-        <p class="project-writeup-summary"> Explores the transformation of transactional health data into an analytical framework to derive actionable insights for chronic disease management.</p>
-        <div class="project-tech-stack">
-          <span class="tech-tag">PostgreSQL</span>
-          <span class="tech-tag">ETL</span>
-          <span class="tech-tag">Data Warehousing</span>
-          <span class="tech-tag">Data Modeling</span>
-          <span class="tech-tag">SQL</span>
-        </div>
-        <p class="project-links">
-          <a href="https://github.com/nic-stack/Chronic-disease-analytics" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
-          <span class="link-separator">|</span> <a href="https://medium.com/@nicmtisi/chronic-care-analytics-revolutionizing-urban-health-with-data-d34cb11726d7" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-        </p>
-      </div>
-    </div>
-  </section>
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="#about" class="active">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <nav class="sticky-nav">
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Portfolio</a></li> <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/250" alt="Profile Picture" class="about-img">
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <img src="images/profile.jpg" alt="Nicolette Mtisi" class="about-img">
-        <div>
-          <p>Hello! I'm Nicolette Mtisi, a passionate Data Scientist dedicated to transforming complex data into actionable insights. My expertise lies in building powerful analytical models and making data truly understandable, enabling it to speak through careful preparation, insightful visualization, and compelling storytelling.</p>
-          <p>I apply these skills to solve real-world challenges, such as predicting future trends or understanding complex behaviors, providing businesses with clear, data-driven intelligence. My goal is to empower organizations across diverse industries to make informed strategic decisions that drive measurable outcomes and foster innovation.</p>
-          <p>Welcome to my corner of the web! Feel free to explore my projects to see my work in action, connect with me, or simply say hello. I'm always eager to collaborate on impactful, data-driven initiatives!</p>
-        </div>
-      </div>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <a href="#" class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1 Image" class="project-img">
+                    <div class="project-content">
+                        <h3>USA Flight Delay and Cancellation Analysis</h3>
+                        <p>Analyzed flight delay and cancellation patterns using real-world airline data to identify key factors and trends, leveraging Python and SQL for data processing.</p>
+                        <p class="project-writeup-summary">From the write-up: Detailed analysis of flight delays/cancellations, identifying patterns and key contributing factors.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Data Visualization</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="view-project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Project</span>
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="#" class="read-article">
+                                <span>Read Article</span>
+                                <span class="animated-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
 
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <div class="experience-timeline-new">
+                <a href="#" class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 2 Image" class="project-img">
+                    <div class="project-content">
+                        <h3>Twitter Sentiment Analysis using DistilBERT</h3>
+                        <p>Built and deployed a lightweight NLP model using DistilBERT to classify airline tweet sentiments, deployed on Hugging Face Spaces with a Gradio UI.</p>
+                        <p class="project-writeup-summary">From the write-up: A step-by-step journey into building a BERT-based sentiment classifier for airline tweets.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Hugging Face</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Gradio</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="view-project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Project</span>
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="#" class="read-article">
+                                <span>Read Article</span>
+                                <span class="animated-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
 
-        <div class="experience-card-new">
-          <div class="timeline-dot-new"><i class="fas fa-building"></i></div>
-          <div class="card-content-new">
-            <h3>Data Science Intern <span class="job-company">Zimbabwe Power Company (ZPC)</span></h3>
-            <p class="job-dates">Aug 2022 – Aug 2023</p>
-            <ul>
-              <li>Cleaned and structured datasets, boosting reporting accuracy by 25% across 10,000+ records.</li>
-              <li>Developed dashboards in Excel and Tableau, visualizing fuel usage and KPIs for 5 operational units.</li>
-              <li>Delivered insights that reduced fuel waste by 10%, saving $70,000 annually.</li>
-              <span class="link-separator">|</span> <a href="https://medium.com/@nicmtisi/enhancing-predictive-maintenance-through-machine-learning-a-comprehensive-survey-on-ensemble-d6dc0ed5898c" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-            </ul>
-          </div>
-        </div>
+                <a href="#" class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 3 Image" class="project-img">
+                    <div class="project-content">
+                        <h3>Sentiment Analysis using NLP</h3>
+                        <p>Developed an NLP-based model to analyze sentiment in text data, using Python libraries like NLTK and scikit-learn for preprocessing and classification.</p>
+                        <p class="project-writeup-summary">From the write-up: Explored fundamental NLP techniques to build a robust sentiment analysis model.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLTK</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="view-project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Project</span>
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="#" class="read-article">
+                                <span>Read Article</span>
+                                <span class="animated-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
 
-        <div class="experience-card-new">
-          <div class="timeline-dot-new"><i class="fas fa-chart-line"></i></div>
-          <div class="card-content-new">
-            <h3>Data Analyst & Sales Assistant <span class="job-company">VEETNIC Enterprises</span></h3>
-            <p class="job-dates">Jan 2024 – Dec 2024</p>
-            <ul>
-              <li>Conducted market basket analysis, identifying product combinations for 30,000+ monthly transactions, increasing sales by 8%.</li>
-              <li>Maintained sales databases, streamlining data entry for 30,000 monthly transactions, reducing errors by 15%.</li>
-              <li>Created sales and inventory reports using Power BI and Excel, improving decision-making speed by 20%.</li>
-            </ul>
-          </div>
-        </div>
+                <a href="#" class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 4 Image" class="project-img">
+                    <div class="project-content">
+                        <h3>Predictive Maintenance for Machinery</h3>
+                        <p>Built a machine learning model to predict machinery failures based on sensor data, improving maintenance schedules and reducing downtime.</p>
+                        <p class="project-writeup-summary">From the write-up: A comprehensive guide on machine learning for industrial applications.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Predictive Modeling</span>
+                            <span class="tech-tag">Data Cleaning & Wrangling</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="view-project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Project</span>
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="#" class="read-article">
+                                <span>Read Article</span>
+                                <span class="animated-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 5 Image" class="project-img">
+                    <div class="project-content">
+                        <h3>Power BI Sales Dashboard for Adventure Works</h3>
+                        <p>Designed an interactive Power BI dashboard to visualize sales performance for Adventure Works, highlighting key metrics and trends for decision-making.</p>
+                        <p class="project-writeup-summary">From the write-up: A detailed guide on creating powerful and interactive dashboards in Power BI.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Data Visualization</span>
+                            <span class="tech-tag">DAX</span>
+                            <span class="tech-tag">Business Intelligence (BI)</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="view-project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Live Dashboard</span>
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="#" class="read-article">
+                                <span>Read Article</span>
+                                <span class="animated-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
 
-        <div class="experience-card-new">
-          <div class="timeline-dot-new"><i class="fas fa-store"></i></div>
-          <div class="card-content-new">
-            <h3>Founder & Owner <span class="job-company">Nicole’s Treats</span></h3>
-            <p class="job-dates">Aug 2021 – Dec 2024</p>
-            <ul>
-              <li>Analyzed sales and customer data using Python and Excel, optimizing pricing strategies for 50+ products, increasing revenue by 12%.</li>
-              <li>Designed Tableau visualizations for sales and customer preferences, analyzing 500+ monthly transactions, boosting product development efficiency by 25%.</li>
-              <li>Leveraged data insights for marketing campaigns, increasing customer engagement by 20% and acquiring 300 new customers.</li>
-            </ul>
-          </div>
-        </div>
+                <a href="#" class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 6 Image" class="project-img">
+                    <div class="project-content">
+                        <h3>Chronic Disease Analytics System - OLTP to OLAP</h3>
+                        <p>Developed a system to transform transactional (OLTP) health data into an analytical (OLAP) format for chronic disease insights.</p>
+                        <p class="project-writeup-summary">From the write-up: Explores the process of building a data warehouse for healthcare analytics.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">ETL</span>
+                            <span class="tech-tag">Data Warehousing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="view-project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Project</span>
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="#" class="read-article">
+                                <span>Read Article</span>
+                                <span class="animated-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
 
-      </div>
-    </section>
+                <a href="#" class="project-card">
+                    <img src="https://via.placeholder.com/900x400" alt="Project 7 Image" class="project-img">
+                    <div class="project-content">
+                        <h3>Insurance Profitability Explorer</h3>
+                        <p>Developed a comprehensive Power BI dashboard to explore key insurance metrics such as premium, claims, and loss ratio across various regions and underwriters. The dashboard includes interactive charts and a user-friendly interface to provide data-driven insights for smarter underwriting decisions.</p>
+                        <p class="project-writeup-summary">From the write-up: A deep dive into creating a robust BI solution for the insurance industry.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">DAX</span>
+                            <span class="tech-tag">Business Intelligence (BI)</span>
+                            <span class="tech-tag">Data Modeling</span>
+                            <span class="tech-tag">Microsoft Excel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="view-project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>View Live Dashboard</span>
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="#" class="read-article">
+                                <span>Read Article</span>
+                                <span class="animated-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <div class="education-container">
-        <div class="education-item">
-          <h3>M.S.: Data Analytics and Visualization</h3>
-          <p class="education-details">Yeshiva University, Katz School of Science and Health - New York, NY</p>
-          <p class="education-dates">Expected Dec 2026</p>
-        </div>
-        <div class="education-item">
-          <h3>B.Sc. (Hons) in Data Science & Informatics</h3>
-          <p class="education-details">University of Zimbabwe - Harare, Zimbabwe</p>
-          <p class="education-dates">Graduated Sept 2024</p>
-        </div>
-      </div>
-    </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-timeline-new">
+                <div class="experience-card-new">
+                    <div class="timeline-dot-new"><i class="fas fa-briefcase"></i></div>
+                    <div class="card-content-new">
+                        <h3>Data Scientist</h3>
+                        <p class="job-company">Company Name 1</p>
+                        <p class="job-dates">Jan 2022 - Present</p>
+                        <ul>
+                            <li>Developed and deployed predictive models for customer churn.</li>
+                            <li>Led data analysis projects using Python, SQL, and various BI tools.</li>
+                            <li>Collaborated with stakeholders to define business problems and data solutions.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-card-new">
+                    <div class="timeline-dot-new"><i class="fas fa-briefcase"></i></div>
+                    <div class="card-content-new">
+                        <h3>Junior Data Analyst</h3>
+                        <p class="job-company">Company Name 2</p>
+                        <p class="job-dates">Jun 2020 - Dec 2021</p>
+                        <ul>
+                            <li>Assisted in building and maintaining data pipelines.</li>
+                            <li>Created reports and dashboards for key business metrics.</li>
+                            <li>Performed ad-hoc analysis to support marketing and sales teams.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="skills">
-      <h2>My Toolkit</h2>
-      <div class="skills-container">
-        <div class="skill">Python</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Microsoft Excel</div>
-        <div class="skill">Power BI</div>
-        <div class="skill">Tableau</div>
-        <div class="skill">Machine Learning</div>
-        <div class="skill">Predictive Modeling</div>
-        <div class="skill">Data Wrangling</div>
-        <div class="skill">Data Visualization</div>
-        <div class="skill">Natural Language Processing (NLP)</div>
-        <div class="skill">Large Language Models (LLMs)</div>
-        <div class="skill">Retrieval-Augmented Generation (RAG)</div>
-        <div class="skill">ETL</div>
-        <div class="skill">PostgreSQL</div>
-        <div class="skill">Data Modeling</div>
-        <div class="skill">Business Intelligence (BI)</div>
-        <div class="skill">Customer Insights</div>
-        <div class="skill">Time Series Analysis</div>
-        <div class="skill">NumPy</div>
-        <div class="skill">Pandas</div>
-        <div class="skill">Scikit-learn</div>
-        <div class="skill">Matplotlib</div>
-        <div class="skill">Seaborn</div>
-        <div class="skill">LLM</div>
-        <div class="skill">Hugging Face</div>
-        <div class="skill">Open AI</div>
-        <div class="skill">Gradio</div>
-        <div class="skill">Git</div>
-       </div>
-    </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <h3>Master of Science in Data Science</h3>
+                    <p class="education-details">University of Science & Technology</p>
+                    <p class="education-dates">2018 - 2020</p>
+                </div>
+                <div class="education-item">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p class="education-details">State University</p>
+                    <p class="education-dates">2014 - 2018</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-      <h2>Get In Touch</h2>
-      <p>I'm currently seeking new opportunities and collaborations. My inbox is always open!</p>
-      <div class="contact-links">
-          <a href="mailto:nicmtisi@gmail.com" class="contact-icon-link" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
-          <a href="https://www.linkedin.com/in/nicolette-mtisi" class="contact-icon-link" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-          <a href="https://medium.com/@nicmtisi" class="contact-icon-link" target="_blank"><i class="fab fa-medium fa-2x"></i></a>
-          <a href="https://github.com/nic-stack" class="contact-icon-link" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-      </div>
-      <div class="contact-form-container">
-        <h3>Send Me a Message</h3>
-        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="b8cd2946-9c78-439d-95f2-562fc60b9e42">
-          <input type="hidden" name="subject" value="New message from Nicolette's Portfolio">
-          <input type="hidden" name="botcheck" class="botcheck">
-          <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <label for="emailAddress">Email Address</label>
-            <input type="email" id="emailAddress" name="email" placeholder="Enter your email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your message..." rows="6" required></textarea>
-          </div>
-          <button type="submit" class="btn send-message-btn">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill">Python</span>
+                <span class="skill">SQL</span>
+                <span class="skill">R</span>
+                <span class="skill">Machine Learning</span>
+                <span class="skill">Deep Learning</span>
+                <span class="skill">Data Visualization</span>
+                <span class="skill">Power BI</span>
+                <span class="skill">Tableau</span>
+                <span class="skill">ETL</span>
+                <span class="skill">Data Warehousing</span>
+                <span class="skill">Cloud (AWS/Azure)</span>
+                <span class="skill">Git</span>
+            </div>
+        </section>
 
-  <footer>
-    <p>© 2025 Nicolette Mtisi</p>
-  </footer>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>
+                If you have a project in mind, want to collaborate, or just want to say hello, feel free to reach out!
+            </p>
+            <div class="contact-links">
+                <a href="#" class="contact-icon-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="contact-icon-link"><i class="fab fa-github"></i></a>
+                <a href="mailto:your.email@example.com" class="contact-icon-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="contact-form-container">
+                <h3>Send me a message</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn send-message-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-  <script src="script.js"></script>
-  <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        // Back to top button functionality (can be added here or in a separate JS file)
+        var backToTopBtn = document.getElementById("backToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopBtn.style.display = "flex";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+        backToTopBtn.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
 </body>
 </html>
-
