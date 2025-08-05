@@ -412,6 +412,7 @@ main section:last-child {
 #projects {
     background-color: var(--background-dark); /* Explicitly dark */
 }
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -486,6 +487,7 @@ main section:last-child {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: auto;
 }
@@ -497,6 +499,7 @@ main section:last-child {
     gap: 5px;
     color: var(--accent-color); /* Accent color for links */
 }
+
 .project-links a:hover {
     color: #c2577e; /* Darker accent on hover */
 }
@@ -506,6 +509,7 @@ main section:last-child {
     margin: 0 5px;
     font-size: 0.9em;
 }
+
 
 /* Contact Section */
 #contact {
