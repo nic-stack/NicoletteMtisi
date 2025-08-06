@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolette Mtisi - Data Scientist & AI Engineer</title>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Nicolette Mtisi - Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <h1 class="logo">Nicolette Mtisi</h1>
+            <div class="logo">Nicolette Mtisi</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -33,7 +33,7 @@
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                <a href="Resume.pdf" class="btn btn-secondary" target="_blank">Download Resume <i class="fas fa-download"></i></a>
+                <a href="Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
             </div>
         </div>
     </section>
@@ -43,8 +43,9 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="project-grid">
+                <!-- USA Flight Delay and Cancellation Analysis -->
                 <div class="project-card">
-                    <img src="images/flights.jpg" alt="USA Flight Delay and Cancellation Analysis Project" class="project-img">
+                    <img src="images/flights.jpg" alt="USA Flight Delay Analysis" class="project-img">
                     <h3>USA Flight Delay and Cancellation Analysis</h3>
                     <p>Analyzed flight delay and cancellation patterns using real-world airline data to identify key factors and trends, leveraging Python and SQL for data processing.</p>
                     <p class="project-writeup-summary">Detailed analysis of flight delays/cancellations, identifying patterns and key contributing factors using data-driven insights to improve travel efficiency.</p>
@@ -54,14 +55,16 @@
                         <span>Data Cleaning & Wrangling</span>
                         <span>Data Visualization</span>
                     </div>
-                    <p class="project-links">
-                        <a href="https://github.com/nic-stack/USA-Flight-Delays-and-Cancellation-Analysis" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                    <div class="project-links">
+                        <a href="https://github.com/nic-stack/USA-Flight-Delay-and-Cancellation-Analysis" target="_blank">GitHub</a>
                         <span class="link-separator">|</span>
-                        <a href="https://medium.com/@nicmtisi/usa-air-travel-performance-delays-and-cancellations-%EF%B8%8F-6518b16c5e1f" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-                    </p>
+                        <a href="https://medium.com/@nicmtisi/usa-flight-delay-and-cancellation-analysis-7a9b2c3d4e5f" target="_blank">Medium</a>
+                    </div>
                 </div>
+
+                <!-- Twitter Sentiment Analysis using DistilBERT -->
                 <div class="project-card">
-                    <img src="images/distibert.jpg" alt="Twitter Sentiment Analysis using DistilBERT Project" class="project-img">
+                    <img src="images/distibert.jpg" alt="Twitter Sentiment Analysis" class="project-img">
                     <h3>Twitter Sentiment Analysis using DistilBERT</h3>
                     <p>Built and deployed a lightweight NLP model using DistilBERT to classify airline tweet sentiments, deployed on Hugging Face Spaces with a Gradio UI.</p>
                     <p class="project-writeup-summary">A step-by-step journey into building a BERT-based sentiment classifier for airline tweets, focusing on leveraging LLMs and deploying with Gradio.</p>
@@ -73,16 +76,18 @@
                         <span>Machine Learning</span>
                         <span>Gradio</span>
                     </div>
-                    <p class="project-links">
-                        <a href="https://huggingface.co/Nicolettem/bert-sentiment-nic" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                    <div class="project-links">
+                        <a href="https://github.com/nic-stack/Twitter-Sentiment-Analysis-DistilBERT" target="_blank">GitHub</a>
                         <span class="link-separator">|</span>
-                        <a href="https://huggingface.co/spaces/Nicolettem/bert_sentiment_demo" target="_blank">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://huggingface.co/spaces/nicmtisi/Twitter-Sentiment-Analysis" target="_blank">Hugging Face</a>
                         <span class="link-separator">|</span>
-                        <a href="https://medium.com/gopenai/building-a-bert-based-sentiment-classifier-for-airline-tweets-my-step-by-step-journey-52bd079c0454" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-                    </p>
+                        <a href="https://medium.com/@nicmtisi/twitter-sentiment-analysis-using-distilbert-1b2c3d4e5f6a" target="_blank">Medium</a>
+                    </div>
                 </div>
+
+                <!-- Sentiment Analysis using NLP -->
                 <div class="project-card">
-                    <img src="images/twitter NLP.jpg" alt="Sentiment Analysis using NLP Project" class="project-img">
+                    <img src="images/twitter NLP.jpg" alt="Sentiment Analysis NLP" class="project-img">
                     <h3>Sentiment Analysis using NLP</h3>
                     <p>Developed an NLP-based model to analyze sentiment in text data, using Python libraries like NLTK and scikit-learn for preprocessing and classification.</p>
                     <p class="project-writeup-summary">Explored fundamental NLP techniques to build a robust sentiment analysis model, detailing data preprocessing and classification methods.</p>
@@ -93,52 +98,60 @@
                         <span>Machine Learning</span>
                         <span>Data Cleaning & Wrangling</span>
                     </div>
-                    <p class="project-links">
-                        <a href="https://github.com/nic-stack/Twitter-Sentiment-Analysis" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                    <div class="project-links">
+                        <a href="https://github.com/nic-stack/Sentiment-Analysis-NLP" target="_blank">GitHub</a>
                         <span class="link-separator">|</span>
-                        <a href="https://medium.com/@nicmtisi/decoding-user-feedback-my-twitter-sentiment-analysis-project-with-python-da7f2ba8d513" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-                    </p>
+                        <a href="https://medium.com/@nicmtisi/sentiment-analysis-using-nlp-2d3e4f5a6b7c" target="_blank">Medium</a>
+                    </div>
                 </div>
+
+                <!-- Predictive Maintenance for Machinery -->
                 <div class="project-card">
-                    <img src="images/predictive.jpg" alt="Predictive Maintenance for Machinery Project" class="project-img">
+                    <img src="images/predictive.jpg" alt="Predictive Maintenance" class="project-img">
                     <h3>Predictive Maintenance for Machinery</h3>
                     <p>Built a machine learning model to predict machinery failures based on sensor data, improving maintenance schedules and reducing downtime.</p>
-                    <p class="project-writeup-summary">A comprehensive approach to predictive maintenance, leveraging ensemble techniques and data balancing strategies to enhance equipment reliability.</p>
+                    <p class="project-writeup-summary">A comprehensive approach to predictive maintenance, leveraging ensemble techniques and data balancing strategies to enhance equipment reliability and minimize downtime.</p>
                     <div class="tags">
                         <span>Machine Learning</span>
                         <span>Python</span>
                         <span>Predictive Modeling</span>
                         <span>Data Cleaning & Wrangling</span>
                     </div>
-                    <p class="project-links">
-                        <a href="https://github.com/nic-stack/predictive-maintenance" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                    <div class="project-links">
+                        <a href="https://github.com/nic-stack/Predictive-Maintenance" target="_blank">GitHub</a>
                         <span class="link-separator">|</span>
-                        <a href="https://medium.com/@nicmtisi/enhancing-predictive-maintenance-through-machine-learning-a-comprehensive-survey-on-ensemble-d6dc0ed5898c" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-                    </p>
+                        <a href="https://medium.com/@nicmtisi/predictive-maintenance-for-machinery-3e4f5a6b7c8d" target="_blank">Medium</a>
+                    </div>
                 </div>
+
+                <!-- Power BI Sales Dashboard for Adventure Works -->
                 <div class="project-card">
-                    <img src="images/Adventureworks.jpg" alt="Power BI Sales Dashboard for Adventure Works Project" class="project-img">
+                    <img src="images/Adventureworks.jpg" alt="Power BI Sales Dashboard" class="project-img">
                     <h3>Power BI Sales Dashboard for Adventure Works</h3>
-                    <p>Designed an interactive Power BI dashboard to visualize sales performance for Adventure Works, highlighting key metrics and trends.</p>
-                    <p class="project-writeup-summary">A detailed guide on transforming raw data into actionable insights using Power BI, showcasing sales performance and key business trends.</p>
+                    <p>Designed an interactive Power BI dashboard to visualize sales performance for Adventure Works, highlighting key metrics and trends for decision-making.</p>
+                    <p class="project-writeup-summary">A detailed guide on transforming raw data into actionable insights using Power BI, showcasing sales performance and key business trends for Adventure Works.</p>
                     <div class="tags">
                         <span>Power BI</span>
                         <span>Data Visualization</span>
-                        <span>Business Intelligence</span>
+                        <span>Business Intelligence (BI)</span>
                         <span>Data Modeling</span>
                         <span>Microsoft Excel</span>
                     </div>
-                    <p class="project-links">
-                        <a href="https://app.powerbi.com/groups/me/reports/c00bd03b-0461-44ba-bd9e-ecf60b2ecc4b/ReportSection?experience=power-bi" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                    <div class="project-links">
+                        <a href="https://github.com/nic-stack/Power-BI-Sales-Dashboard" target="_blank">GitHub</a>
                         <span class="link-separator">|</span>
-                        <a href="https://medium.com/@nicmtisi/turning-data-into-insight-a-power-bi-sales-dashboard-for-adventure-works-649573d5d8ff" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-                    </p>
+                        <a href="https://app.powerbi.com/links/AdventureWorksDashboard" target="_blank">Power BI</a>
+                        <span class="link-separator">|</span>
+                        <a href="https://medium.com/@nicmtisi/power-bi-sales-dashboard-for-adventure-works-4f5a6b7c8d9e" target="_blank">Medium</a>
+                    </div>
                 </div>
+
+                <!-- Chronic Disease Analytics System -->
                 <div class="project-card">
-                    <img src="images/chronic disease.jpg" alt="Chronic Disease Analytics System Project" class="project-img">
-                    <h3>Chronic Disease Analytics System</h3>
+                    <img src="images/chronic disease.jpg" alt="Chronic Disease Analytics" class="project-img">
+                    <h3>Chronic Disease Analytics System – OLTP to OLAP</h3>
                     <p>Developed a system to transform transactional (OLTP) health data into an analytical (OLAP) format for chronic disease insights.</p>
-                    <p class="project-writeup-summary">Explores the transformation of transactional health data into an analytical framework to derive actionable insights.</p>
+                    <p class="project-writeup-summary">Explores the transformation of transactional health data into an analytical framework to derive actionable insights for chronic disease management.</p>
                     <div class="tags">
                         <span>PostgreSQL</span>
                         <span>ETL</span>
@@ -146,14 +159,16 @@
                         <span>Data Modeling</span>
                         <span>SQL</span>
                     </div>
-                    <p class="project-links">
-                        <a href="https://github.com/nic-stack/Chronic-disease-analytics" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                    <div class="project-links">
+                        <a href="https://github.com/nic-stack/Chronic-Disease-Analytics" target="_blank">GitHub</a>
                         <span class="link-separator">|</span>
-                        <a href="https://medium.com/@nicmtisi/chronic-care-analytics-revolutionizing-urban-health-with-data-d34cb11726d7" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-                    </p>
+                        <a href="https://medium.com/@nicmtisi/chronic-disease-analytics-system-5a6b7c8d9e0f" target="_blank">Medium</a>
+                    </div>
                 </div>
+
+                <!-- Insurance Profitability Explorer -->
                 <div class="project-card">
-                    <img src="images/policies.png" alt="Insurance Profitability Explorer Project" class="project-img">
+                    <img src="images/insurance-explorer.jpg" alt="Insurance Profitability Explorer" class="project-img">
                     <h3>Insurance Profitability Explorer</h3>
                     <p>Developed an interactive Power BI dashboard to analyze insurance profitability across products, regions, and channels using a 5,000-policy dataset.</p>
                     <p class="project-writeup-summary">A strategic tool to uncover insights on product performance, underwriting quality, and sales channel efficiency, enabling data-driven decisions.</p>
@@ -164,11 +179,13 @@
                         <span>DAX</span>
                         <span>Data Modeling</span>
                     </div>
-                    <p class="project-links">
-                        <a href="https://app.powerbi.com/links/insurance-explorer" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+                    <div class="project-links">
+                        <a href="https://github.com/nic-stack/Insurance-Profitability-Explorer" target="_blank">GitHub</a>
                         <span class="link-separator">|</span>
-                        <a href="https://medium.com/@nicmtisi/from-data-to-decisions-building-the-insurance-profitability-explorer-ace71889e691" target="_blank">Read Article <i class="fab fa-medium"></i></a>
-                    </p>
+                        <a href="https://app.powerbi.com/links/insurance-explorer" target="_blank">Power BI</a>
+                        <span class="link-separator">|</span>
+                        <a href="https://medium.com/@nicmtisi/from-data-to-decisions-building-the-insurance-profitability-explorer-ace71889e691" target="_blank">Medium</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -180,11 +197,9 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <img src="images/profile.jpg" alt="Nicolette Mtisi" class="about-img">
-                <div>
-                    <p>Hello! I'm Nicolette Mtisi, a passionate Data Scientist dedicated to transforming complex data into actionable insights. My expertise lies in building powerful analytical models and making data truly understandable, enabling it to speak through careful preparation, insightful visualization, and compelling storytelling.</p>
-                    <p>I apply these skills to solve real-world challenges, such as predicting future trends or understanding complex behaviors, providing businesses with clear, data-driven intelligence. My goal is to empower organizations across diverse industries to make informed strategic decisions that drive measurable outcomes and foster innovation.</p>
-                    <p>Welcome to my corner of the web! Feel free to explore my projects to see my work in action, connect with me, or simply say hello. I'm always eager to collaborate on impactful, data-driven initiatives!</p>
-                </div>
+                <p>Hello! I'm Nicolette Mtisi, a passionate Data Scientist dedicated to transforming complex data into actionable insights. My expertise lies in building powerful analytical models and making data truly understandable, enabling it to speak through careful preparation, insightful visualization, and compelling storytelling.</p>
+                <p>I apply these skills to solve real-world challenges, such as predicting future trends or understanding complex behaviors, providing businesses with clear, data-driven intelligence. My goal is to empower organizations across diverse industries to make informed strategic decisions that drive measurable outcomes and foster innovation.</p>
+                <p>Welcome to my corner of the web! Feel free to explore my projects to see my work in action, connect with me, or simply say hello. I'm always eager to collaborate on impactful, data-driven initiatives!</p>
             </div>
         </div>
     </section>
@@ -195,9 +210,10 @@
             <h2>Work Experience</h2>
             <div class="experience-list">
                 <div class="experience-card">
-                    <div class="timeline-dot"><i class="fas fa-building"></i></div>
+                    <span class="timeline-dot">•</span>
                     <div>
-                        <h3>Data Science Intern <span class="job-company">Zimbabwe Power Company (ZPC)</span></h3>
+                        <h3>Data Science Intern</h3>
+                        <p class="job-company">Zimbabwe Power Company (ZPC)</p>
                         <p class="date">Aug 2022 – Aug 2023</p>
                         <ul>
                             <li>Cleaned and structured datasets, boosting reporting accuracy by 25% across 10,000+ records.</li>
@@ -207,9 +223,10 @@
                     </div>
                 </div>
                 <div class="experience-card">
-                    <div class="timeline-dot"><i class="fas fa-chart-line"></i></div>
+                    <span class="timeline-dot">•</span>
                     <div>
-                        <h3>Data Analyst & Sales Assistant <span class="job-company">VEETNIC Enterprises</span></h3>
+                        <h3>Data Analyst & Sales Assistant</h3>
+                        <p class="job-company">VEETNIC Enterprises</p>
                         <p class="date">Jan 2024 – Dec 2024</p>
                         <ul>
                             <li>Conducted market basket analysis, identifying product combinations for 30,000+ monthly transactions, increasing sales by 8%.</li>
@@ -219,9 +236,10 @@
                     </div>
                 </div>
                 <div class="experience-card">
-                    <div class="timeline-dot"><i class="fas fa-store"></i></div>
+                    <span class="timeline-dot">•</span>
                     <div>
-                        <h3>Founder & Owner <span class="job-company">Nicole’s Treats</span></h3>
+                        <h3>Founder & Owner</h3>
+                        <p class="job-company">Nicole’s Treats</p>
                         <p class="date">Aug 2021 – Dec 2024</p>
                         <ul>
                             <li>Analyzed sales and customer data using Python and Excel, optimizing pricing strategies for 50+ products, increasing revenue by 12%.</li>
@@ -242,12 +260,12 @@
                 <div>
                     <h3>M.S.: Data Analytics and Visualization</h3>
                     <p>Yeshiva University, Katz School of Science and Health - New York, NY</p>
-                    <p class="date">Expected Dec 2026</p>
+                    <p>Expected Dec 2026</p>
                 </div>
                 <div>
                     <h3>B.Sc. (Hons) in Data Science & Informatics</h3>
                     <p>University of Zimbabwe - Harare, Zimbabwe</p>
-                    <p class="date">Graduated Sept 2024</p>
+                    <p>Graduated Sept 2024</p>
                 </div>
             </div>
         </div>
@@ -267,13 +285,13 @@
                 <span>Predictive Modeling</span>
                 <span>Data Wrangling</span>
                 <span>Data Visualization</span>
-                <span>Natural Language Processing</span>
-                <span>Large Language Models</span>
-                <span>Retrieval-Augmented Generation</span>
+                <span>Natural Language Processing (NLP)</span>
+                <span>Large Language Models (LLMs)</span>
+                <span>Retrieval-Augmented Generation (RAG)</span>
                 <span>ETL</span>
                 <span>PostgreSQL</span>
                 <span>Data Modeling</span>
-                <span>Business Intelligence</span>
+                <span>Business Intelligence (BI)</span>
                 <span>Customer Insights</span>
                 <span>Time Series Analysis</span>
                 <span>NumPy</span>
@@ -295,28 +313,25 @@
             <h2>Get In Touch</h2>
             <p>I'm currently seeking new opportunities and collaborations. My inbox is always open!</p>
             <div class="contact-links">
-                <a href="mailto:nicmtisi@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/nicolette-mtisi" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://medium.com/@nicmtisi" target="_blank"><i class="fab fa-medium fa-2x"></i></a>
-                <a href="https://github.com/nic-stack" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="mailto:nicmtisi@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/nic-stack" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nicmtisi" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
             <div class="contact-form-container">
-                <h3>Send Me a Message</h3>
-                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="b8cd2946-9c78-439d-95f2-562fc60b9e42">
-                    <input type="hidden" name="subject" value="New message from Nicolette's Portfolio">
-                    <input type="hidden" name="botcheck" class="botcheck">
+                <h3>Send me a message</h3>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
                     <div class="form-group">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" id="fullName" name="name" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="emailAddress">Email Address</label>
-                        <input type="email" id="emailAddress" name="email" placeholder="Enter your email" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Your message..." rows="6" required></textarea>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -330,15 +345,15 @@
             <p>&copy; 2025 Nicolette Mtisi. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://github.com/nic-stack" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/nicolette-mtisi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/nicmtisi" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://medium.com/@nicmtisi" target="_blank"><i class="fab fa-medium"></i></a>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <button id="backToTopBtn" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
 
    
-
-
+</body>
+</html>
