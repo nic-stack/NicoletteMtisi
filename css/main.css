@@ -204,16 +204,30 @@ body {
     margin: 0 auto;
 }
 
-.about-img, .profile-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+.profile-pic {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
 }
 
-.about-content p, .about p {
-    font-size: 18px;
-    color: #4b5563;
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 /* Work Experience Section */
@@ -483,3 +497,4 @@ body {
         height: 150px;
     }
 }
+
