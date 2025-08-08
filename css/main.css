@@ -1,3 +1,14 @@
+I can help you make the toolkit section fit on one page on your phone screen. The issue you're seeing is likely caused by the "My Toolkit" section's elements not wrapping correctly. This can be fixed by adjusting the CSS properties for the `.skills-container` class.
+
+Here is the updated CSS you can use. This code includes the previous fixes for the navigation bar and the new adjustments for your toolkit section to make it more compact and fit on a single screen without scrolling. The changes include:
+
+  * **`flex-wrap: wrap;`**: This property allows the skill tags to wrap to the next line when they run out of horizontal space, which makes the layout more compact on smaller screens.
+  * **`gap: 15px;`**: This property sets the space between the tags, which can be adjusted to make them fit more tightly if needed.
+  * **`justify-content: center;`**: This property centers the skill tags horizontally within their container, which provides a clean and balanced look on any screen size.
+
+### Complete, Corrected CSS
+
+```css
 /* Reset and Global Styles */
 * {
   margin: 0;
@@ -106,10 +117,10 @@ body {
 .sticky-nav {
   background-color: var(--primary-color);
   padding: 15px 0;
-  position: fixed; /* Changed from static to fixed */
+  position: fixed;
   width: 100%;
   z-index: 1000;
-  top: 0; /* Ensures it sticks to the top */
+  top: 0;
 }
 
 .nav-links {
@@ -117,7 +128,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap; /* Allows navigation links to wrap on small screens */
+  flex-wrap: wrap; /* NEW: Fixes navigation overflow on mobile */
 }
 
 .nav-links li a {
@@ -333,7 +344,7 @@ section h2 {
 /* Skills Section */
 .skills-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* This allows the toolkit items to wrap to a new line on mobile */
   gap: 15px;
   justify-content: center;
 }
@@ -494,3 +505,4 @@ footer {
     font-size: 2rem;
   }
 }
+```
