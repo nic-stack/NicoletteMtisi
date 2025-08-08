@@ -499,3 +499,100 @@ footer {
     font-size: 2rem;
   }
 }
+
+/* --- Keep all your existing CSS above --- */
+
+/* Buttons container fix for mobile */
+@media (max-width: 480px) {
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn, .Resume-btn {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+/* Projects grid for small screens: 1 column */
+@media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Contact form inputs and button full width on mobile */
+@media (max-width: 480px) {
+  .contact-form input,
+  .contact-form textarea,
+  .btn.send-message-btn {
+    width: 100%;
+  }
+}
+
+/* Skills container wrap fix */
+@media (max-width: 480px) {
+  .skills-container {
+    justify-content: center;
+  }
+  .skill {
+    flex: 1 1 auto;
+    min-width: 120px;
+    text-align: center;
+  }
+}
+
+/* About content text center on mobile */
+@media (max-width: 480px) {
+  .about-content p {
+    text-align: center;
+  }
+}
+
+/* Hero improvements for smaller screens */
+@media (max-width: 480px) {
+  .hero {
+    padding: 50px 15px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero .subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Nav links vertical and spaced on small */
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px 0;
+  }
+  .nav-links li a {
+    font-size: 1.1rem;
+  }
+}
+
+/* Experience cards stack vertically */
+@media (max-width: 480px) {
+  .experience-card-new {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .timeline-dot-new {
+    margin-bottom: 15px;
+  }
+}
+
+/* General padding fixes for sections */
+@media (max-width: 480px) {
+  section {
+    padding: 50px 15px;
+  }
+}
