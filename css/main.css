@@ -117,6 +117,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap; /* Allows navigation links to wrap on small screens */
 }
 
 .nav-links li a {
