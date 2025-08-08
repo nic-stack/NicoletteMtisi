@@ -454,8 +454,6 @@ footer {
     font-size: 1.2rem;
   }
 
-  /* The .nav-links rule that caused the mobile menu to stack vertically has been removed. */
-
   .about-content {
     flex-direction: column;
     text-align: center;
