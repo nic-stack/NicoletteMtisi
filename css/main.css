@@ -1,14 +1,3 @@
-I can help you make the toolkit section fit on one page on your phone screen. The issue you're seeing is likely caused by the "My Toolkit" section's elements not wrapping correctly. This can be fixed by adjusting the CSS properties for the `.skills-container` class.
-
-Here is the updated CSS you can use. This code includes the previous fixes for the navigation bar and the new adjustments for your toolkit section to make it more compact and fit on a single screen without scrolling. The changes include:
-
-  * **`flex-wrap: wrap;`**: This property allows the skill tags to wrap to the next line when they run out of horizontal space, which makes the layout more compact on smaller screens.
-  * **`gap: 15px;`**: This property sets the space between the tags, which can be adjusted to make them fit more tightly if needed.
-  * **`justify-content: center;`**: This property centers the skill tags horizontally within their container, which provides a clean and balanced look on any screen size.
-
-### Complete, Corrected CSS
-
-```css
 /* Reset and Global Styles */
 * {
   margin: 0;
@@ -127,8 +116,8 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap; /* NEW: Fixes navigation overflow on mobile */
+  gap: 15px; /* Adjusted for a more compact look */
+  flex-wrap: wrap; 
 }
 
 .nav-links li a {
@@ -344,17 +333,17 @@ section h2 {
 /* Skills Section */
 .skills-container {
   display: flex;
-  flex-wrap: wrap; /* This allows the toolkit items to wrap to a new line on mobile */
-  gap: 15px;
+  flex-wrap: wrap; 
+  gap: 5px; /* Adjusted for a more compact look */
   justify-content: center;
 }
 
 .skill {
   background-color: var(--accent-color);
   color: var(--primary-color);
-  padding: 10px 20px;
+  padding: 5px 10px; /* Adjusted for a more compact look */
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 0.9rem; /* Adjusted for a more compact look */
   font-weight: 600;
 }
 
@@ -505,4 +494,3 @@ footer {
     font-size: 2rem;
   }
 }
-```
