@@ -1,8 +1,8 @@
-# Nicolette Mtisi: Data Science & Analytics Portfolio
+# Nicolette Mtisi: Data Analytics & Data Science Portfolio
 
 🌐 **Live site: [nic-stack.github.io/NicoletteMtisi](https://nic-stack.github.io/NicoletteMtisi/)**
 
-This is the source code for my personal portfolio website, which showcases my work in machine learning, NLP, business intelligence and data engineering.
+This is the source code for my personal portfolio website, which showcases my work in data analytics, business intelligence, data engineering and machine learning.
 
 ## Sections
 - **About:** who I am and what I work on, with animated highlight stats
