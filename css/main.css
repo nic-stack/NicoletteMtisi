@@ -19,6 +19,7 @@ html {
   --mocha:      #7A6A55;
   --espresso:   #3D2E1E;
   --rust:       #C0694A;
+  --rust-text:  #A9573A;
   --blush:      #E8C5B5;
   --sage:       #8FA98A;
   --text-main:  #2C211A;
@@ -69,7 +70,7 @@ img {
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.12em;
-  color: var(--rust);
+  color: var(--rust-text);
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
@@ -569,11 +570,11 @@ img {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--taupe);
+  color: var(--mocha);
 }
 
 .bounce {
-  color: var(--taupe);
+  color: var(--mocha);
   font-size: 0.8rem;
   animation: bounce 1.8s ease-in-out infinite;
 }
@@ -799,7 +800,7 @@ img {
 .tl-company {
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--rust);
+  color: var(--rust-text);
   margin-bottom: 4px;
 }
 
@@ -814,7 +815,7 @@ img {
 
 .tl-location i {
   font-size: 0.7rem;
-  color: var(--taupe);
+  color: var(--mocha);
 }
 
 .tl-bullets {
@@ -908,7 +909,7 @@ img {
 .edu-school {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--rust);
+  color: var(--rust-text);
   margin-bottom: 3px;
 }
 
@@ -1016,7 +1017,7 @@ img {
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: var(--rust);
+  color: var(--rust-text);
   text-transform: uppercase;
 }
 
@@ -1027,7 +1028,7 @@ img {
 
 .project-icon-links a {
   font-size: 0.9rem;
-  color: var(--taupe);
+  color: var(--mocha);
   transition: color 0.25s ease;
 }
 
@@ -1052,7 +1053,7 @@ img {
 
 .project-meta {
   font-size: 0.78rem;
-  color: var(--taupe);
+  color: var(--mocha);
   font-style: italic;
 }
 
@@ -1196,13 +1197,13 @@ img {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--taupe);
+  color: var(--mocha);
 }
 
 .contact-card-value {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--rust);
+  color: var(--rust-text);
   transition: color 0.25s ease;
 }
 
